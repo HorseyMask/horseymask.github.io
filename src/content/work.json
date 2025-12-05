@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "duration": "2025 - present",
+    "company": "Sogang University",
+    "title": "M.S. in Computer Science and Engineering",
+    "description": "Data-Intensive AI Computing & Systems Laboratory, Advised by Youngjae Kim"
+  },
+
+  {
+    "id": 2,
+    "duration": "2019 - 2024",
+    "company": "Sogang University",
+    "title": "B.S. in Computer Science and Engineering",
+    "description": "Graduated Cum Laude"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "icon": {
+      "type": "lucide",
+      "name": "mail"
+    },
+    "text": "Email",
+    "link": "mailto:hchung0343@u.sogang.ac.kr"
+  },
+  {
+    "id": 2,
+    "icon": {
+      "type": "lucide",
+      "name": "github"
+    },
+    "text": "GitHub",
+    "link": "https://github.com/hschung1652"
+  }
+]

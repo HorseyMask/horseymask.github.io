@@ -1,0 +1,65 @@
+---
+import '../styles/article-list.css';
+
+import { getCollection } from "astro:content";
+import Card from "../components/Card.astro";
+import Icon from "../components/Icon.astro";
+import Layout from "../layouts/Layout.astro";
+import { openGraph } from 'spectre:globals';
+
+const hobbies = await getCollection('hobbies');
+---
+<Layout
+	title={openGraph.hobbies.title || "hobbies"}
+	description={openGraph.hobbies.description}
+	pagefindIgnore
+>
+	<div class="layout-grid-left" slot="left">
+		<Card class="flex-col-card">
+			<h2 class="no-mt">Hobbies Count</h2>
+				<div class="stats-div">
+					<div class="stat">
+						<h3 class="text-glow">{hobbies.length}</h3>
+						<span>{hobbies.length === 1 ? '' : '(for now)'}</span>
+					</div>
+				</div>
+		</Card>
+  </div>
+  <div class="layout-grid-right" slot="right">
+		<Card>
+			<div class="header-container">
+				<Icon type='lucide' name="message-circle-heart" width={24} height={24} class='glow-icon' />
+				<h2>All my hobbies</h2>
+			</div>
+			<div class="content-container">
+				{hobbies.map((hobbies) => (
+					<a href={`/hobbies/${hobbies.id}`} class="post-container">
+						<div class="post-header">
+							<h3>{hobbies.data.title}</h3>
+						</div>
+						<span>{hobbies.data.description}</span>
+					</a>
+				))}
+			</div>
+		</Card>
+  </div>
+</Layout>
+<style>
+	.stats-div {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.stat {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.stat h3 {
+		font-size: 2em;
+		margin: 0;
+		margin-bottom: .5rem;
+	}
+
+</style>

@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "title": "Next generation storage devices",
+    "description": "Experimental NAND flash based storage and their operating system/file system support."
+  },
+
+  {
+    "id": 2,
+    "title": "Emerging memory device concepts",
+    "description": "Tiered memory systems and experimental CXL memory devices."
+  },
+
+  {
+    "id": 3,
+    "title": "LLM Inference Optimization",
+    "description": "Attention Offloading and smart KV Cache reuse."
+  }
+]

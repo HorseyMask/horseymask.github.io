@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "language": "English",
+    "level": "(Basically) Native (OPIc AL)"
+  },
+
+  {
+    "id": 2,
+    "language": "Korean",
+    "level": "(Somehow) Native (Mother tongue)"
+  },
+
+  {
+    "id": 3,
+    "language": "Japanese",
+    "level": "Barely"
+  }
+]

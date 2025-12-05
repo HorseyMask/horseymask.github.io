@@ -1,0 +1,58 @@
+---
+import '../../styles/article.css';
+
+import Card from "../../components/Card.astro";
+import Layout from "../../layouts/Layout.astro";
+
+import type { GetStaticPaths } from "astro";
+import type { CollectionEntry } from "astro:content";
+import { render } from "astro:content";
+import { getCollection } from "astro:content";
+import ImageGlow from "../../components/ImageGlow.astro";
+import Icon from "../../components/Icon.astro";
+
+interface Props {
+  hobby: CollectionEntry<'hobbies'>;
+}
+
+const { hobby } = Astro.props;
+
+export const getStaticPaths = (async () => {
+  const hobbies = await getCollection('hobbies');
+
+  return hobbies.map((hobby) => ({ params: { hobbies: hobby.id }, props: { hobby } }));
+}) satisfies GetStaticPaths;
+
+console.log(hobby.data.title);
+
+const { Content } = await render(hobby);
+---
+<Layout
+  title={hobby.data.title}
+  description={hobby.data.description}
+>
+  <div class="left" slot="left">
+  </div>
+  <article slot="right" data-pagefind-body>
+    <Card>
+      <div class="article-header" id="_top" data-pagefind-ignore>
+        {hobby.data.image && <ImageGlow quality={100} class="article-image" src={hobby.data.image} alt={hobby.data.title} />}
+        <div class="header">
+          <h1 class="no-mt article-h1">{hobby.data.title}</h1>
+          <div class="article-info">
+          </div>
+        </div>
+      </div>
+      <Content />
+      <hr class="end-of-article" />
+      <a href="/hobbies" class="block-link" data-pagefind-ignore>← Back to hobbies</a>
+    </Card>
+  </article>
+</Layout>
+<style>
+  .project-info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+</style>

@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "title": "OpenCXD: An Open Real-Device-Guided Hybrid Evaluation Framework for CXL-SSDs",
+    "authors": "H.Chung*, J.Park*, T.Noh, S.Ahn, K.Kim, M.Zhao, Y.Kim",
+    "venue": "The 33rd International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS 2025)",
+    "links": "https://arxiv.org/abs/2508.11477"
+  },
+
+  {
+    "id": 2,
+    "title": "KVAccel: A Novel Write Accelerator for LSM-Tree-Based KV Stores with Host-SSD Collaboration",
+    "authors": "K.Kim*, H.Chung*, S.Ahn*, J.Park, S.Jamil, H.Byun, M.Lee, J.Choi, Y.Kim",
+    "venue": "The 39th IEEE International Parallel and Distributed Processing Symposium (IPDPS 2025)",
+    "links": "https://ieeexplore.ieee.org/document/11078520/"
+  },
+
+  {
+    "id": 3,
+    "title": "Cost-Efficient VM Selection for Cloud-Based LLM Inference with KV Cache Offloading",
+    "authors": "K.Kim, J.Kim, H.Chung, M.Cha, H.Kim, Y.Kim",
+    "venue": "The 18th IEEE International Conference on Cloud Computing (CLOUD 2025)",
+    "links": "https://ieeexplore.ieee.org/document/11120583/"
+  }
+]
