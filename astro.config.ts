@@ -23,7 +23,7 @@ const {
 
 // https://astro.build/config
 const config = defineConfig({
-  site: 'https://horseymask.github.io',
+  site: 'https://horseymask.github.io/',
   output: 'static',
   integrations: [
     expressiveCode({
