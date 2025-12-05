@@ -25,6 +25,7 @@ const {
 const config = defineConfig({
   site: 'https://horseymask.github.io/',
   output: 'static',
+  base: '/home',
   integrations: [
     expressiveCode({
       themes: [spectreDark],
