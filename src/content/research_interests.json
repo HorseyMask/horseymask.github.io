@@ -13,7 +13,7 @@
 
   {
     "id": 3,
-    "title": "LLM Inference Optimization",
-    "description": "Attention Offloading and smart KV Cache reuse."
+    "title": "LLM inference optimization",
+    "description": "Attention offloading and smart KV cache reuse."
   }
 ]
