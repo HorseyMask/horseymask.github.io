@@ -64,7 +64,8 @@ const publications = defineCollection({
     title: z.string(),
     authors: z.string(),
     venue: z.string(),
-    links: z.string().url(),
+      // Allow non-URL strings (e.g. "(To Appear)") and URLs
+      links: z.string(),
   })
 });
 
