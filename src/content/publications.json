@@ -17,6 +17,14 @@
 
   {
     "id": 3,
+    "title": "LLM-Pilot: SLO-Aware and Cost-Efficient LLM Serving on Public Cloud VM Clusters via Offloading",
+    "authors": "J.Kim, K.Kim, H.Chung, J. Yang, J. Kim, D. Li, Y. Kim",
+    "venue": "The 26th IEEE International Symposium on Cluster, Cloud, and Internet Computing (CCGrid 2025)",
+    "links": "(To Appear)"
+  },
+
+  {
+    "id": 4,
     "title": "Cost-Efficient VM Selection for Cloud-Based LLM Inference with KV Cache Offloading",
     "authors": "K.Kim, J.Kim, H.Chung, M.Cha, H.Kim, Y.Kim",
     "venue": "The 18th IEEE International Conference on Cloud Computing (CLOUD 2025)",
