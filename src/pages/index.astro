@@ -141,14 +141,22 @@ const { Content: About } = await render(about!);
 				<h2>Publications</h2>
 			</div>
 			<div class="work-experience-container">
-				{publications.map((entry) => (
-					<div class="work-experience-entry">
-						<h3 class="work-experience-company">{entry.data.title}</h3>
-						<h5 class="work-experience-duration">{entry.data.venue}</h5>
-						<h4 class="work-experience-role">{entry.data.authors}</h4>
-						<a href={entry.data.links} class="work-experience-desc">{entry.data.links}</a>
-					</div>
-				))}
+				{publications.map((entry) => {
+					const link = entry.data.links;
+					const isUrl = typeof link === 'string' && /^https?:\/\//.test(link);
+					return (
+						<div class="work-experience-entry">
+							<h3 class="work-experience-company">{entry.data.title}</h3>
+							<h5 class="work-experience-duration">{entry.data.venue}</h5>
+							<h4 class="work-experience-role">{entry.data.authors}</h4>
+							{isUrl ? (
+								<a href={link} class="work-experience-desc" target="_blank" rel="noopener noreferrer">{link}</a>
+							) : (
+								<span class="work-experience-desc">{link}</span>
+							)}
+						</div>
+					);
+				})}
 			</div>
 		</Card>
 		<Card>
