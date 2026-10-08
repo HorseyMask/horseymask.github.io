@@ -17,14 +17,30 @@
 
   {
     "id": 3,
-    "title": "LLM-Pilot: SLO-Aware and Cost-Efficient LLM Serving on Public Cloud VM Clusters via Offloading",
-    "authors": "J.Kim, K.Kim, H.Chung, J.Yang, J.Kim, D.Li, Y.Kim",
-    "venue": "The 26th IEEE International Symposium on Cluster, Cloud, and Internet Computing (CCGrid 2026)",
-    "links": "(To Appear)"
+    "title": "CXDVirt: Low Latency Kernel Module Based CXL-SSD Emulation",
+    "authors": "H.Chung, S.Bong, H.Kim, Y.Kim",
+    "venue": "The 17th International Workshop on Performance Modeling, Benchmarking and Simulation of High Performance Computer Systems (PMBS), held in conjunction with SC26",
+    "links": "https://arxiv.org/abs/2610.08899"
   },
 
   {
     "id": 4,
+    "title": "Bridging LLM Serving and CXL-SSDs with Chunk-Aware KV Cache Management",
+    "authors": "H.Chung, T.Noh, M.Kim, J.Hwang, H.Kim, Y.Kim",
+    "venue": "arXiv preprint",
+    "links": "https://arxiv.org/abs/2609.26828"
+  },
+
+  {
+    "id": 5,
+    "title": "LLM-Pilot: SLO-Aware and Cost-Efficient LLM Serving on Public Cloud VM Clusters via Offloading",
+    "authors": "J.Kim, K.Kim, H.Chung, J.Yang, J.Kim, D.Li, Y.Kim",
+    "venue": "The 26th IEEE International Symposium on Cluster, Cloud, and Internet Computing (CCGrid 2026)",
+    "links": "https://ieeexplore.ieee.org/document/11619230/"
+  },
+
+  {
+    "id": 6,
     "title": "Cost-Efficient VM Selection for Cloud-Based LLM Inference with KV Cache Offloading",
     "authors": "K.Kim, J.Kim, H.Chung, M.Cha, H.Kim, Y.Kim",
     "venue": "The 18th IEEE International Conference on Cloud Computing (CLOUD 2025)",
